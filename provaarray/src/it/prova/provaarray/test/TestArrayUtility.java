@@ -5,7 +5,7 @@ import it.prova.provaarray.utility.ArrayUtility;
 public class TestArrayUtility {
 
 	public static void main(String[] args) {
-		int [] valoriPerTestSommaElementi = {7,8,9,4};
+		int [] valoriPerTestSommaElementi = {9,7,8,4,8};
 		//System.out.println(ArrayUtility.sommaElementi(valoriPerTestSommaElementi));
 		//System.out.println(ArrayUtility.sommaElementiIndiceDispariAlContrario(valoriPerTestSommaElementi));
 		//System.out.println(ArrayUtility.contaQuantiSonoNegativiPari(valoriPerTestSommaElementi));
@@ -20,10 +20,17 @@ public class TestArrayUtility {
 			//System.out.println(ret[i]);
 		//}
 		//System.out.println(ArrayUtility.presenteSoloUnaVolta(valoriPerTestSommaElementi,5 ));
-		int[] ret =( ArrayUtility.creaArreyInvertito(valoriPerTestSommaElementi));
+		//int[] ret =( ArrayUtility.creaArreyInvertito(valoriPerTestSommaElementi));
+		//for (int i=0;i<ret.length;i++) {
+				//System.out.println(ret[i]);
+				
+		
+				
+				
+		
+		int[] ret =( ArrayUtility.cancellaElementoArray(valoriPerTestSommaElementi, 9));
 		for (int i=0;i<ret.length;i++) {
 				System.out.println(ret[i]);
-		
 		}
 	}
 
