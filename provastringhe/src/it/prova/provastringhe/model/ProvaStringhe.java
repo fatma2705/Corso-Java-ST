@@ -79,5 +79,16 @@ public class ProvaStringhe {
 		return true;
 	}
 	
+	public static boolean nomiUgualiNellePrimePosizioni(String [] stringhe , int posizione) {
+		for(int i=1;i<posizione;i++) {
+			if(stringhe[i]!=stringhe[0]) {
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
+	
 
 }

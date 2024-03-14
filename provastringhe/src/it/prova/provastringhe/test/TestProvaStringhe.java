@@ -13,8 +13,8 @@ public class TestProvaStringhe {
 	
 	
 		//ProvaStringhe.stampaCaratteriAlContrario(stringa);
-		String[] stringhe = {"marca","ftm","luca","ciao","ciao"};
-		String[] stringhe2 = {"marca","fatm","luca","ciao","ciao","ciao"};
+		//String[] stringhe = {"marca","ftm","luca","ciao","ciao"};
+		String[] stringhe2 = {"ciao","ciao","ciafo","ciao","ckiao","ciao"};
 		
 		//System.out.println(ProvaStringhe.contaLunghezzaDispari(stringhe));
 		
@@ -26,7 +26,9 @@ public class TestProvaStringhe {
 		
 		//System.out.println(ProvaStringhe.lunghezzeIesime(stringhe, stringhe2));
 		
-		System.out.println(ProvaStringhe.parolaPalindroma("anna"));
+		//System.out.println(ProvaStringhe.parolaPalindroma("anna"));
+		
+		System.out.println(ProvaStringhe.nomiUgualiNellePrimePosizioni(stringhe2, 3));
 	}
 
 }
