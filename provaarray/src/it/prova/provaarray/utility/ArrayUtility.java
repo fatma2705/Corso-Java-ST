@@ -268,16 +268,6 @@ public class ArrayUtility {
 			}
 		}
 		String[] nArray = new String[conta];
-//		int ultimoIndiceStringaCorretta = 0;
-//		for (int i = 0; i < nArray.length; i++) {
-//			for (int a = ultimoIndiceStringaCorretta; a < elenco.length; a++) {
-//				if (elenco[a].length() == numCaratteri) {
-//					nArray[i] = elenco[a];
-//					ultimoIndiceStringaCorretta = a;
-//					i++;
-//				}
-//			}
-//		}
 		int ultimoIndiceUtilizzato = 0;
 		for (int i = 0; i < elenco.length; i++) {
 			if (elenco[i].length() == numCaratteri) {
@@ -287,4 +277,34 @@ public class ArrayUtility {
 		}
 		return nArray;
 	}
+	
+	public static int[] riempiArrayConMultipliDi(int[] valori,int multiplo) {
+		int conta = 0;
+		for (int i = 0; i < valori.length; i++) {
+			if (valori[i] % multiplo == 0) {
+				conta++;
+			}
+		}
+		int[] nArray = new int[conta];
+		int ultimoIndiceUtilizzato = 0;
+		for (int i = 0; i < valori.length; i++) {
+			if (valori[i] % multiplo == 0) {
+				nArray[ultimoIndiceUtilizzato]= valori[i];
+				ultimoIndiceUtilizzato ++;
+			}
+		}
+		return nArray;
+	
+		
+	}
+	public static boolean arrayPalindromo(int[] array) {
+		for(int i=0;i<array.length;i++) {
+			if(array[i] != array[array.length -i -1]){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	
 }

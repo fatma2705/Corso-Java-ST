@@ -73,6 +73,15 @@ public class TestArrayUtility {
 				System.out.println(Arrays.toString(ret));
 				
 				
+				int[] ret2 =ArrayUtility.riempiArrayConMultipliDi(valoriPerTestSommaElementi, 2);
+				System.out.println(Arrays.toString(ret2));
+				
+				
+				int[] array2 = {2002,44,2002};
+				
+				System.out.println(ArrayUtility.arrayPalindromo(array2));
+			
+				
 				
 	}
 
