@@ -1,5 +1,7 @@
 package it.prova.provastringhe.test;
 
+import java.util.Arrays;
+
 import it.prova.provastringhe.model.ProvaStringhe;
 
 public class TestProvaStringhe {
@@ -14,7 +16,7 @@ public class TestProvaStringhe {
 	
 		//ProvaStringhe.stampaCaratteriAlContrario(stringa);
 		//String[] stringhe = {"marca","ftm","luca","ciao","ciao"};
-		String[] stringhe2 = {"ciao","ciao","ciafo","ciao","ckiao","ciao"};
+		String[] stringhe2 = {"anna","uyguy","effe","yy"};
 		
 		//System.out.println(ProvaStringhe.contaLunghezzaDispari(stringhe));
 		
@@ -28,7 +30,29 @@ public class TestProvaStringhe {
 		
 		//System.out.println(ProvaStringhe.parolaPalindroma("anna"));
 		
-		System.out.println(ProvaStringhe.nomiUgualiNellePrimePosizioni(stringhe2, 3));
+		//System.out.println(ProvaStringhe.nomiUgualiNellePrimePosizioni(stringhe2, 3));
+		
+		//System.out.println(ProvaStringhe.trovaParolaPiuCorta(stringhe2));
+		
+		//System.out.println(ProvaStringhe.contaVocali("ciao A"));
+		
+		
+//		boolean[] ret =ProvaStringhe.sonoPalindromi(stringhe2);
+//		System.out.println(Arrays.toString(ret));
+//		
+//		ProvaStringhe.invertiOrdineStringhe(stringhe2);
+//		
+//		
+//		
+//		String[] array1 = {"ciao","sara","palla"};
+//		String[] array2 = {"sera","queque","pallavolo","conta"};
+//		System.out.println(ProvaStringhe.haElementoComune(array1, array2));
+//		
+//		
+//		
+		String[] array5 = {"ciao","fe","oreo"};
+		System.out.println(ProvaStringhe.contaStringheConNumeroVocali(array5, 3));
+		
 	}
 
 }

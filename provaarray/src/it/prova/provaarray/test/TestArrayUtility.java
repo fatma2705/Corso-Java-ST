@@ -49,37 +49,29 @@ public class TestArrayUtility {
 //				}
 //				
 				
-		int [] valoriPerTestSommaElementi = {1,3,4,6,8,9,12,13,14,15,16,17,18,30,80,120,170,200};
-//				
-//				System.out.println(ArrayUtility.cercaNumeroArrayOrdinato(valoriPerTestSommaElementi, 100));
-//				
-//				char[] ret =( ArrayUtility.caratteriOrdinatistringa("ciao"));
-//				for (int i=0;i<ret.length;i++) {
-//					System.out.println(ret[i]);
-//				}
-//				
+	
+//				int[] array = {20,50,10,12,15};
+//				int[] ret =( ArrayUtility.inserisciENUmero(array, 27,1));
 //				System.out.println(Arrays.toString(ret));
 //				
+//				int[] array2 = {10,10,10,10,10,10};
+//				System.out.println(ArrayUtility.sommaIntervallo(array2, 1, 3));
+//				
+//				
+//				int[] array3 = {20,-50,10,12,15};
+//				int[] ret2 =( ArrayUtility.trovaMaxMin(array3));
+//				System.out.println(Arrays.toString(ret2));
+//				
+//				
 				
-				System.out.println(ArrayUtility.cercaNumero(valoriPerTestSommaElementi,20));
-				
-				//ArrayUtility.stampaInversa("nome");
-				
-				ArrayUtility.stampaNumeri(10);
-				String[] array = {"ciao","bbbb","njhuuhuu","bvnv","ggyyg","vvvv","lll"};
-				
-				
-				String[] ret =ArrayUtility.riempiArrayStringheUguali(array, 4);
-				System.out.println(Arrays.toString(ret));
-				
-				
-				int[] ret2 =ArrayUtility.riempiArrayConMultipliDi(valoriPerTestSommaElementi, 2);
-				System.out.println(Arrays.toString(ret2));
+				int[] array4 = {10,45,10,10,88,44,10};
+				System.out.println(ArrayUtility.contaCoppieUguali(array4));
 				
 				
-				int[] array2 = {2002,44,2002};
 				
-				System.out.println(ArrayUtility.arrayPalindromo(array2));
+				
+				
+				
 			
 				
 				

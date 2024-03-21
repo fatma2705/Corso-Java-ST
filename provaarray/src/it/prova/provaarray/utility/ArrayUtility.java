@@ -307,4 +307,62 @@ public class ArrayUtility {
 	}
 	
 	
+	public static int[] inserisciENUmero(int[] array, int elemento,int posizione) {
+		int indexTemp = 0;
+		int[] arrayNuovo = new int[array.length +1];
+		for (int i=0;i<array.length +1 ;i++) {
+			if(i != posizione) {
+				arrayNuovo[i] = array[indexTemp];
+				indexTemp ++;
+				}
+			}
+		arrayNuovo[posizione] = elemento;
+		return arrayNuovo;
+	}
+	
+	
+	
+	
+	public static int sommaIntervallo(int[] array, int inizio, int fine) {
+		int somma = 0;
+		for (int i=inizio;i<fine+1;i++) {
+			somma += array[i];
+		}
+		return somma;
+	}
+	
+	
+	public static int[] trovaMaxMin(int[] array) {
+		int[] nuovoArray = new int[2];
+		int min  =array[0];
+		int max = 0;
+		for (int i=0;i<array.length;i++) {
+			if (array[i] < min) {
+				min = array[i];
+			}
+			if (array[i] > max) {
+				max = array[i];
+			}
+			nuovoArray[0] = min;
+			nuovoArray[1] =  max;
+		}
+		return nuovoArray;
+	}
+	
+	
+	
+	public static int contaCoppieUguali(int[] array) {
+		int coppieUguali =0;
+		for(int i=0;i<array.length-1;i++) {
+			for(int a=i+1;a<array.length;a++) {
+				if (array[a] == array[i]) {
+					coppieUguali ++;
+				}
+			}
+		}
+		return coppieUguali;
+		
+	}
+	
+	
 }
