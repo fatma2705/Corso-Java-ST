@@ -50,8 +50,10 @@ public class TestProvaStringhe {
 //		
 //		
 //		
-		String[] array5 = {"ciao","fe","oreo"};
-		System.out.println(ProvaStringhe.contaStringheConNumeroVocali(array5, 3));
+		String[] array5 = {"Ciao","Fe","Oreo"};
+		//System.out.println(ProvaStringhe.contaStringheConNumeroVocali(array5, 3));
+		
+		System.out.println(ProvaStringhe.contaStringheInizianoConLaMaiuscola(array5));
 		
 	}
 

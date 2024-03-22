@@ -365,4 +365,40 @@ public class ArrayUtility {
 	}
 	
 	
+	public static int trovaIndiceMassimo(int[] array) {
+		int index =0;
+		int max = array[0];
+		for(int i= 0;i<array.length;i++) {
+			if(array[i] > max) {
+				max = array[i];
+				index = i;
+			}
+		}
+		return index;
+	}
+	
+	
+	
+	public static int trovaModa(int[] array) {
+		int moda = 0;
+		int conta = 0;
+		int[] nuovoArray = new int[array.length];
+		for(int i=0;i<array.length;i++) {
+			if(array[i] == array[i+1]) {
+				conta ++;
+			}
+			nuovoArray[i] = conta;
+			}
+		for(int i = 0;i< nuovoArray.length;i++) {
+			if(nuovoArray[i] > nuovoArray[0]) {
+				moda = i;
+			}
+		}
+		return moda;
+	}
+	
+	
+	
+	
+	
 }

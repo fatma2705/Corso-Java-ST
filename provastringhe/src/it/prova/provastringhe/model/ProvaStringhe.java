@@ -194,4 +194,16 @@ public class ProvaStringhe {
 	
 
 }
+	
+	
+	public static int contaStringheInizianoConLaMaiuscola(String[] array) {
+		int conta = 0;
+		for (int i= 0;i<array.length;i++) {
+				int asciiValue = array[i].charAt(0);
+				if(asciiValue >=65 && asciiValue <=90) {
+					conta ++;
+			}
+		}
+		return conta;
+	}
 }
