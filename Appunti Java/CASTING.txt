@@ -1,0 +1,48 @@
+CASTING:
+
+
+Casting in java --> processo di conversione di un oggetto da un tipo di dato ad un altro
+
+si suddivide in cast implicito ed esplicito
+
+
+Casting implicito --> avviene quando si converte un tipo di dato più piccolo in uno più grande è sicuro perchè in questa operazione non abbiam perdite di dati.
+
+
+es :
+
+int numeroIntero = 10;
+double numeroVirgolaMobile = numeroIntero;
+
+Casting Esplicito --> avviene quando si converte un tipo di dato più grande in un più piccolo 
+
+possibile perdita di dati .
+
+double numVirgolaMobile = 10.5;
+int NumeroIntero = (int) numeroVirgolaMobile;
+
+
+-------------------------------------------CASTING CON OGGETTI ------------------------------
+
+
+public Class Persona {                                             
+	// codice persona 
+}
+
+
+                                   ----------------------
+
+public class Studente extends Persona{
+	// codice Studente 
+}
+
+
+
+                              -------------------------------
+
+
+public class TestPersona {
+	 public class main{
+
+	Studente stud1 = new Studente();
+	Persona stud1 = (Persona) stud1;

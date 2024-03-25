@@ -68,7 +68,7 @@ public class TestArrayUtility {
 				int[] array4 = {1,5,80,100,0,1,4,4,4,4,7,7,7};
 				//System.out.println(ArrayUtility.contaCoppieUguali(array4));
 				
-				System.out.println(ArrayUtility.trovaIndiceMassimo(array4));
+				//System.out.println(ArrayUtility.trovaIndiceMassimo(array4));
 				
 				System.out.println(ArrayUtility.trovaModa(array4));
 				

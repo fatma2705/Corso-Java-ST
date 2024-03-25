@@ -271,14 +271,14 @@ public class ArrayUtility {
 		int ultimoIndiceUtilizzato = 0;
 		for (int i = 0; i < elenco.length; i++) {
 			if (elenco[i].length() == numCaratteri) {
-				nArray[ultimoIndiceUtilizzato]= elenco[i];
-				ultimoIndiceUtilizzato ++;
+				nArray[ultimoIndiceUtilizzato] = elenco[i];
+				ultimoIndiceUtilizzato++;
 			}
 		}
 		return nArray;
 	}
-	
-	public static int[] riempiArrayConMultipliDi(int[] valori,int multiplo) {
+
+	public static int[] riempiArrayConMultipliDi(int[] valori, int multiplo) {
 		int conta = 0;
 		for (int i = 0; i < valori.length; i++) {
 			if (valori[i] % multiplo == 0) {
@@ -289,54 +289,49 @@ public class ArrayUtility {
 		int ultimoIndiceUtilizzato = 0;
 		for (int i = 0; i < valori.length; i++) {
 			if (valori[i] % multiplo == 0) {
-				nArray[ultimoIndiceUtilizzato]= valori[i];
-				ultimoIndiceUtilizzato ++;
+				nArray[ultimoIndiceUtilizzato] = valori[i];
+				ultimoIndiceUtilizzato++;
 			}
 		}
 		return nArray;
-	
-		
+
 	}
+
 	public static boolean arrayPalindromo(int[] array) {
-		for(int i=0;i<array.length;i++) {
-			if(array[i] != array[array.length -i -1]){
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] != array[array.length - i - 1]) {
 				return false;
 			}
 		}
 		return true;
 	}
-	
-	
-	public static int[] inserisciENUmero(int[] array, int elemento,int posizione) {
+
+	public static int[] inserisciENUmero(int[] array, int elemento, int posizione) {
 		int indexTemp = 0;
-		int[] arrayNuovo = new int[array.length +1];
-		for (int i=0;i<array.length +1 ;i++) {
-			if(i != posizione) {
+		int[] arrayNuovo = new int[array.length + 1];
+		for (int i = 0; i < array.length + 1; i++) {
+			if (i != posizione) {
 				arrayNuovo[i] = array[indexTemp];
-				indexTemp ++;
-				}
+				indexTemp++;
 			}
+		}
 		arrayNuovo[posizione] = elemento;
 		return arrayNuovo;
 	}
-	
-	
-	
-	
+
 	public static int sommaIntervallo(int[] array, int inizio, int fine) {
 		int somma = 0;
-		for (int i=inizio;i<fine+1;i++) {
+		for (int i = inizio; i < fine + 1; i++) {
 			somma += array[i];
 		}
 		return somma;
 	}
-	
-	
+
 	public static int[] trovaMaxMin(int[] array) {
 		int[] nuovoArray = new int[2];
-		int min  =array[0];
+		int min = array[0];
 		int max = 0;
-		for (int i=0;i<array.length;i++) {
+		for (int i = 0; i < array.length; i++) {
 			if (array[i] < min) {
 				min = array[i];
 			}
@@ -344,61 +339,52 @@ public class ArrayUtility {
 				max = array[i];
 			}
 			nuovoArray[0] = min;
-			nuovoArray[1] =  max;
+			nuovoArray[1] = max;
 		}
 		return nuovoArray;
 	}
-	
-	
-	
+
 	public static int contaCoppieUguali(int[] array) {
-		int coppieUguali =0;
-		for(int i=0;i<array.length-1;i++) {
-			for(int a=i+1;a<array.length;a++) {
+		int coppieUguali = 0;
+		for (int i = 0; i < array.length - 1; i++) {
+			for (int a = i + 1; a < array.length; a++) {
 				if (array[a] == array[i]) {
-					coppieUguali ++;
+					coppieUguali++;
 				}
 			}
 		}
 		return coppieUguali;
-		
+
 	}
-	
-	
+
 	public static int trovaIndiceMassimo(int[] array) {
-		int index =0;
+		int index = 0;
 		int max = array[0];
-		for(int i= 0;i<array.length;i++) {
-			if(array[i] > max) {
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > max) {
 				max = array[i];
 				index = i;
 			}
 		}
 		return index;
 	}
-	
-	
-	
+
 	public static int trovaModa(int[] array) {
-		int moda = 0;
-		int conta = 0;
-		int[] nuovoArray = new int[array.length];
-		for(int i=0;i<array.length;i++) {
-			if(array[i] == array[i+1]) {
-				conta ++;
+		int moda = array[0];
+		int maxConta = 0;
+		for (int i = 0; i < array.length; i++) {
+			int conta = 0;
+			for (int a = 0; a < array.length; a++) {
+				if (array[i] == array[a]) {
+					conta ++;
+				}
 			}
-			nuovoArray[i] = conta;
-			}
-		for(int i = 0;i< nuovoArray.length;i++) {
-			if(nuovoArray[i] > nuovoArray[0]) {
-				moda = i;
+			if (conta > maxConta) {
+				maxConta = conta;
+				moda = array[i];
 			}
 		}
+
 		return moda;
 	}
-	
-	
-	
-	
-	
 }

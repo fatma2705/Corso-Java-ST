@@ -1,0 +1,43 @@
+INTERFACCIE:
+
+
+un'interfaccia in java rappresenta un insieme di metodi (senza implementazioni) che le classi devono implementare 
+
+
+                                                             ----------------------------------------
+
+
+public interface Animale {
+	 
+	public void respira();
+	public void mangia();
+	public void corre(),
+
+
+}
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public class Tigre implements Animale 
+
+	public void respira(){
+		System.out.printl(" Respira ")
+	}
+
+* e devono essere implementati tutti i metodi dell'interfaccia *
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+POLIMORFISMO => possono essere utilizzate per implementare il polimorfismo siccome una classe può implementare più interfaccie , è possibile trattare un oggetto di quella 
+classe come un'istanza di una qualsiasi delle interfaccie che implementa .
+
+
+
+
+
+
+es:----------
+Animale  mioAnimale = new Cane();

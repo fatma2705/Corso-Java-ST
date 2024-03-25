@@ -1,0 +1,41 @@
+Classi Astratte :
+
+
+Abstract class NomeClasse {
+
+	abstract ...............;
+
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+abstract class Figura{
+
+
+	abstract public double clacolaArea();
+
+}
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+class Quadrato extends Figura {
+
+	private double lato;
+	
+	
+
+	public Quadrato(double lato){
+	
+	this.lato = lato;
+}
+
+
+public double calcolaArea(){
+	return this.lato*4;
+}
+
+
+	
+

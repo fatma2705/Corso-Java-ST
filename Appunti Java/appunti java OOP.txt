@@ -1,0 +1,52 @@
+vantaggi dell'ereditarietà
+
+riusibilità del codice: 
+permette di defenire un comportamento generale in una classe base che può essere ereditato e usato dalle sue sotto classi 
+
+--------------------------------------------------------------------------------
+estendibilità :
+
+le sottoclassi possono estendere il comportamento della classe madre aggiunti nuovi metodi e attributi ciò consente die stendere il nostro software
+
+
+-------------------------------------------------------------------------------
+
+
+
+polimorfismo: 
+principio fondamentale OOP
+consente ad un'oggetto di assumere forme diverse fornendo flessibilità al codice . il polimorfismo è spesso implementato attraverso il concetto di eredetarietà
+
+
+
+
+----------------------------------------------------------------------------------
+vantaggi del polimorfismo:
+
+- riuso del codice --> le sottoclassi possono sfruttare il comportamento della classe base
+
+
+
+- estensibilità --> nuove classi possono essere integrate nella gerarchia esistente.
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------- Esempio classi Eredate -------------------------------------------
+
+public class Figura {                                                                 public class Cerchio extends Figura
+// codice classe                                                                           //codice classe
+}
+                                                                                              @overide
+                                                                                              public void disegna(){
+public void disegna(){
+Syso("Disegno una figura ")                                                                    Syso("Disegna un cerchio")
+}                                                                                                   }
