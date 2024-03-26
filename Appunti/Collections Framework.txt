@@ -1,0 +1,74 @@
+                                                            Collections Framework
+
+
+1) ARRAYLIST :
+
+sintassi : ArrayList < Tipo dati> nomeLista = new ArrayList<>();
+
+
+
+ * METODI LISTE  *
+
+
+- ADD(elemento)  // aggiunge elemento
+
+- REMOVE(elemento) // rimuove elemento
+
+- CONTAINS(elemento) // ritorna true se l'elemento esiste dentro la lista false se non 
+
+- isEMPTY // ritorna true se la lista è vuota false se non lo è 
+
+- SIZE() // restituisce il numero di elementi presenti dentro la lista 
+
+- CLEAR() // svuota la lista 
+
+- INDEXOF(elemento) // restituisce l'indice della prima occorrenza dell'elemento specificato
+
+- GET(int indice) // restituisce l'elemento alla posizione specificata
+
+- SET(int indice , elemento ) // sostituisce l'elemento presente alla posizione specificata con l'elemento specificato
+
+
+
+
+
+2) SET 
+
+sintassi: SET nomeSet = new HashSet<>
+
+
+- non ammettono duplicati
+- non hanno ordine definito 
+
+
+
+
+
+
+
+
+
+3) HashMap 
+
+< chaive , valore >
+
+metodi :
+
+
+- PUT(chiave,valore) // aggiunge chiave e valore 
+
+
+- GET ( chiave ) // restiusce il valore della chiave specificata 
+
+- GET (valore) // restitiusce la chiave del valore specificato
+
+
+
+-REMOVE (chiave, valore) // rimuove la chiave+ valore specificato
+
+-SIZE() // restitiusce il numero di coppie presenti dentro l' hashmap
+
+
+- CONTAINSKEY ()   // restituisce true se la chiave è presente false se no 
+
+- CONTAINSVALUE()  // restitiusce true se il valore è presente false se no 

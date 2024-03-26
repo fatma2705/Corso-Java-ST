@@ -1,0 +1,35 @@
+                              GENERICS IN JAVA 
+
+Meccanismo che consente di creare classi ; interface e metodi che operano su tipi di dati parametrizzati 
+
+
+
+------------------------------------------------------------------------------
+
+Public class Cassetta <T>{
+	private T contenuto;
+}
+
+public void impostaContenuto(T conteuto){
+	this.contenuto = contenuto;
+}
+
+public T ottieniContenuto(){
+	return contenuto;
+}
+}
+
+------------------------------------ES : ------------------------------------------------
+
+
+public class Test {
+
+	public main {
+
+Cassetta <String> cassettaStringhe = new Cassetta<> ();
+
+cassettaStringhe.impostaContenuto("contenuto stringhe ");
+
+String contenutoStringhe = cassettaStringhe.ottieniContenuto();
+
+System.out.println("contenuto della cassetta stringhe "  + contenutoStringhe);
